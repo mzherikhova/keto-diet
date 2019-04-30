@@ -1,0 +1,1126 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57F5EF931BE379B6DA7809E0 /* Pods_KetoDietTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77070E0661417A1AD62AACC /* Pods_KetoDietTests.framework */; };
+		5C1A77C57545436A095860A2 /* Pods_KetoDietUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A32A8D39435DC68FFC87CEE /* Pods_KetoDietUITests.framework */; };
+		A539A05917AA6B73D1641E2B /* Pods_KetoDiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C963F6BF6CBCE4213256E6F9 /* Pods_KetoDiet.framework */; };
+		FA0DCFC222510E7500BA8CA6 /* Extensions+UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFC122510E7500BA8CA6 /* Extensions+UINavigationBar.swift */; };
+		FA0DCFC522511A4500BA8CA6 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFC422511A4500BA8CA6 /* HeaderTitleView.swift */; };
+		FA0DCFCD2251297C00BA8CA6 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DCFCC2251297C00BA8CA6 /* HeaderTitleView.xib */; };
+		FA0DCFCF225871E800BA8CA6 /* CellHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFCE225871E800BA8CA6 /* CellHeaderProtocol.swift */; };
+		FA0DCFD42258BBE000BA8CA6 /* SegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFD22258BBE000BA8CA6 /* SegmentTableViewCell.swift */; };
+		FA0DCFD52258BBE000BA8CA6 /* SegmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DCFD32258BBE000BA8CA6 /* SegmentTableViewCell.xib */; };
+		FA0DCFD9225A11BC00BA8CA6 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFD7225A11BC00BA8CA6 /* TextTableViewCell.swift */; };
+		FA0DCFDA225A11BC00BA8CA6 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DCFD8225A11BC00BA8CA6 /* TextTableViewCell.xib */; };
+		FA0DCFE2225A1AF100BA8CA6 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFE0225A1AF100BA8CA6 /* TextFieldTableViewCell.swift */; };
+		FA0DCFE3225A1AF100BA8CA6 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0DCFE1225A1AF100BA8CA6 /* TextFieldTableViewCell.xib */; };
+		FA0DCFE5225A231000BA8CA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0DCFE4225A231000BA8CA6 /* GoogleService-Info.plist */; };
+		FA0DCFE7225A56D800BA8CA6 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFE6225A56D800BA8CA6 /* RegisterModel.swift */; };
+		FA0DCFE9225A577900BA8CA6 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFE8225A577900BA8CA6 /* Sex.swift */; };
+		FA0DCFEB225A5D1F00BA8CA6 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DCFEA225A5D1F00BA8CA6 /* Extensions+UIViewController.swift */; };
+		FA176F1E222C14950037A23E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA176F1D222C14950037A23E /* ViewController.xib */; };
+		FA176F20222C14D40037A23E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F1F222C14D40037A23E /* ViewController.swift */; };
+		FA176F28222C1B590037A23E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F27222C1B590037A23E /* Router.swift */; };
+		FA176F2A2243D75F0037A23E /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F292243D75F0037A23E /* StartRouter.swift */; };
+		FA176F2E2243E0030037A23E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F2C2243E0030037A23E /* RegisterViewController.swift */; };
+		FA176F2F2243E0030037A23E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA176F2D2243E0030037A23E /* RegisterViewController.xib */; };
+		FA176F332243F04B0037A23E /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F322243F04B0037A23E /* PhotoView.swift */; };
+		FA176F352243F12A0037A23E /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA176F342243F12A0037A23E /* PhotoView.xib */; };
+		FA176F382243F27E0037A23E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F372243F27E0037A23E /* NibLoadable.swift */; };
+		FA176F3B2244D1120037A23E /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F3A2244D1120037A23E /* Extension+UIView.swift */; };
+		FA176F3D2244DC180037A23E /* Extensions+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F3C2244DC180037A23E /* Extensions+NSLayoutConstraint.swift */; };
+		FA176F43224660F40037A23E /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F41224660F40037A23E /* UserInfoTableViewCell.swift */; };
+		FA176F44224660F40037A23E /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA176F42224660F40037A23E /* UserInfoTableViewCell.xib */; };
+		FA176F47224688B00037A23E /* RegisterCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F46224688B00037A23E /* RegisterCellModel.swift */; };
+		FA176F4922478C5D0037A23E /* HeightContainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F4822478C5D0037A23E /* HeightContainable.swift */; };
+		FA176F4B22478E2A0037A23E /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA176F4A22478E2A0037A23E /* Typealiases.swift */; };
+		FA66C2DC2209E749001C63BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66C2DB2209E749001C63BB /* AppDelegate.swift */; };
+		FA66C2E32209E74B001C63BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA66C2E22209E74B001C63BB /* Assets.xcassets */; };
+		FA66C2E62209E74B001C63BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA66C2E42209E74B001C63BB /* LaunchScreen.storyboard */; };
+		FA66C2F12209E74C001C63BB /* KetoDietTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66C2F02209E74C001C63BB /* KetoDietTests.swift */; };
+		FA66C2FC2209E74C001C63BB /* KetoDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66C2FB2209E74C001C63BB /* KetoDietUITests.swift */; };
+		FAAB9CD72271CB1800C88FFF /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CD62271CB1800C88FFF /* AuthManager.swift */; };
+		FAAB9CDA2271D7DC00C88FFF /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CD92271D7DC00C88FFF /* Utilites.swift */; };
+		FAAB9CDC2271F11800C88FFF /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CDB2271F11800C88FFF /* CustomErrors.swift */; };
+		FAAB9CDE2271F2A400C88FFF /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CDD2271F2A400C88FFF /* FirebaseManager.swift */; };
+		FAAB9CE02271F2FF00C88FFF /* FirebaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CDF2271F2FF00C88FFF /* FirebaseResult.swift */; };
+		FAAB9CE22271F36800C88FFF /* SecureStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CE12271F36800C88FFF /* SecureStorageManager.swift */; };
+		FAAB9CE42271F4FF00C88FFF /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CE32271F4FF00C88FFF /* Validators.swift */; };
+		FAAB9CE62271F63400C88FFF /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CE52271F63400C88FFF /* StoreManager.swift */; };
+		FAAB9CEA22734EED00C88FFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CE822734EED00C88FFF /* MainViewController.swift */; };
+		FAAB9CEB22734EED00C88FFF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAB9CE922734EED00C88FFF /* MainViewController.xib */; };
+		FAAB9CEF22748C3500C88FFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CED22748C3500C88FFF /* LoginViewController.swift */; };
+		FAAB9CF022748C3500C88FFF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAB9CEE22748C3500C88FFF /* LoginViewController.xib */; };
+		FAAB9CF422749ACB00C88FFF /* DetailFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CF222749ACB00C88FFF /* DetailFieldTableViewCell.swift */; };
+		FAAB9CF522749ACB00C88FFF /* DetailFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAB9CF322749ACB00C88FFF /* DetailFieldTableViewCell.xib */; };
+		FAAB9CF722749C4300C88FFF /* BiometricAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CF622749C4300C88FFF /* BiometricAuthManager.swift */; };
+		FAAB9D002275F57300C88FFF /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9CFE2275F57300C88FFF /* TitleHeaderView.swift */; };
+		FAAB9D012275F57300C88FFF /* TitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAB9CFF2275F57300C88FFF /* TitleHeaderView.xib */; };
+		FAAB9D0A2275F79D00C88FFF /* TextFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9D082275F79D00C88FFF /* TextFooterView.swift */; };
+		FAAB9D0B2275F79D00C88FFF /* TextFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAB9D092275F79D00C88FFF /* TextFooterView.xib */; };
+		FAAB9D0D2275F92500C88FFF /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB9D0C2275F92500C88FFF /* LoginModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA66C2ED2209E74C001C63BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA66C2D02209E749001C63BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA66C2D72209E749001C63BB;
+			remoteInfo = KetoDiet;
+		};
+		FA66C2F82209E74C001C63BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA66C2D02209E749001C63BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA66C2D72209E749001C63BB;
+			remoteInfo = KetoDiet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32D7B493276C862EF1E39913 /* Pods-KetoDiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoDiet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetoDiet/Pods-KetoDiet.debug.xcconfig"; sourceTree = "<group>"; };
+		3754CB636F23DA26D683D967 /* Pods-KetoDiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoDiet.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetoDiet/Pods-KetoDiet.release.xcconfig"; sourceTree = "<group>"; };
+		5AB4CE70A2760C1A3A3E5172 /* Pods-KetoDietTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoDietTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetoDietTests/Pods-KetoDietTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A32A8D39435DC68FFC87CEE /* Pods_KetoDietUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetoDietUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B6AB5AD2FC7224196363D /* Pods-KetoDietTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoDietTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetoDietTests/Pods-KetoDietTests.release.xcconfig"; sourceTree = "<group>"; };
+		A77070E0661417A1AD62AACC /* Pods_KetoDietTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetoDietTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A0873C74188A800ECB043C /* Pods-KetoDietUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoDietUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetoDietUITests/Pods-KetoDietUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C32F8ADF4921CA65337507E4 /* Pods-KetoDietUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoDietUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetoDietUITests/Pods-KetoDietUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C963F6BF6CBCE4213256E6F9 /* Pods_KetoDiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetoDiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0DCFC122510E7500BA8CA6 /* Extensions+UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UINavigationBar.swift"; sourceTree = "<group>"; };
+		FA0DCFC422511A4500BA8CA6 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
+		FA0DCFCC2251297C00BA8CA6 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
+		FA0DCFCE225871E800BA8CA6 /* CellHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeaderProtocol.swift; sourceTree = "<group>"; };
+		FA0DCFD22258BBE000BA8CA6 /* SegmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTableViewCell.swift; sourceTree = "<group>"; };
+		FA0DCFD32258BBE000BA8CA6 /* SegmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentTableViewCell.xib; sourceTree = "<group>"; };
+		FA0DCFD7225A11BC00BA8CA6 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		FA0DCFD8225A11BC00BA8CA6 /* TextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
+		FA0DCFE0225A1AF100BA8CA6 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		FA0DCFE1225A1AF100BA8CA6 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		FA0DCFE4225A231000BA8CA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA0DCFE6225A56D800BA8CA6 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		FA0DCFE8225A577900BA8CA6 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		FA0DCFEA225A5D1F00BA8CA6 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
+		FA176F1D222C14950037A23E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		FA176F1F222C14D40037A23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA176F27222C1B590037A23E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FA176F292243D75F0037A23E /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
+		FA176F2C2243E0030037A23E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FA176F2D2243E0030037A23E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FA176F322243F04B0037A23E /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		FA176F342243F12A0037A23E /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		FA176F372243F27E0037A23E /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		FA176F3A2244D1120037A23E /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		FA176F3C2244DC180037A23E /* Extensions+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		FA176F41224660F40037A23E /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		FA176F42224660F40037A23E /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		FA176F46224688B00037A23E /* RegisterCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCellModel.swift; sourceTree = "<group>"; };
+		FA176F4822478C5D0037A23E /* HeightContainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightContainable.swift; sourceTree = "<group>"; };
+		FA176F4A22478E2A0037A23E /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		FA66C2D82209E749001C63BB /* KetoDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KetoDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA66C2DB2209E749001C63BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA66C2E22209E74B001C63BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA66C2E52209E74B001C63BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA66C2E72209E74B001C63BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA66C2EC2209E74C001C63BB /* KetoDietTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoDietTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA66C2F02209E74C001C63BB /* KetoDietTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoDietTests.swift; sourceTree = "<group>"; };
+		FA66C2F22209E74C001C63BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA66C2F72209E74C001C63BB /* KetoDietUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoDietUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA66C2FB2209E74C001C63BB /* KetoDietUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoDietUITests.swift; sourceTree = "<group>"; };
+		FA66C2FD2209E74C001C63BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAB9CD62271CB1800C88FFF /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FAAB9CD92271D7DC00C88FFF /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
+		FAAB9CDB2271F11800C88FFF /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
+		FAAB9CDD2271F2A400C88FFF /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		FAAB9CDF2271F2FF00C88FFF /* FirebaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseResult.swift; sourceTree = "<group>"; };
+		FAAB9CE12271F36800C88FFF /* SecureStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorageManager.swift; sourceTree = "<group>"; };
+		FAAB9CE32271F4FF00C88FFF /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		FAAB9CE52271F63400C88FFF /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		FAAB9CE822734EED00C88FFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FAAB9CE922734EED00C88FFF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		FAAB9CED22748C3500C88FFF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAAB9CEE22748C3500C88FFF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FAAB9CF222749ACB00C88FFF /* DetailFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFieldTableViewCell.swift; sourceTree = "<group>"; };
+		FAAB9CF322749ACB00C88FFF /* DetailFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailFieldTableViewCell.xib; sourceTree = "<group>"; };
+		FAAB9CF622749C4300C88FFF /* BiometricAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthManager.swift; sourceTree = "<group>"; };
+		FAAB9CFE2275F57300C88FFF /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		FAAB9CFF2275F57300C88FFF /* TitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeaderView.xib; sourceTree = "<group>"; };
+		FAAB9D082275F79D00C88FFF /* TextFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFooterView.swift; sourceTree = "<group>"; };
+		FAAB9D092275F79D00C88FFF /* TextFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFooterView.xib; sourceTree = "<group>"; };
+		FAAB9D0C2275F92500C88FFF /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA66C2D52209E749001C63BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539A05917AA6B73D1641E2B /* Pods_KetoDiet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66C2E92209E74C001C63BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57F5EF931BE379B6DA7809E0 /* Pods_KetoDietTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66C2F42209E74C001C63BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1A77C57545436A095860A2 /* Pods_KetoDietUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1014DBABB3334BCACB58ADD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32D7B493276C862EF1E39913 /* Pods-KetoDiet.debug.xcconfig */,
+				3754CB636F23DA26D683D967 /* Pods-KetoDiet.release.xcconfig */,
+				5AB4CE70A2760C1A3A3E5172 /* Pods-KetoDietTests.debug.xcconfig */,
+				8D5B6AB5AD2FC7224196363D /* Pods-KetoDietTests.release.xcconfig */,
+				C32F8ADF4921CA65337507E4 /* Pods-KetoDietUITests.debug.xcconfig */,
+				A9A0873C74188A800ECB043C /* Pods-KetoDietUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C7196F3B3FEB976D451F2FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C963F6BF6CBCE4213256E6F9 /* Pods_KetoDiet.framework */,
+				A77070E0661417A1AD62AACC /* Pods_KetoDietTests.framework */,
+				6A32A8D39435DC68FFC87CEE /* Pods_KetoDietUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA0DCFC3225119FF00BA8CA6 /* HeaderTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				FA0DCFC422511A4500BA8CA6 /* HeaderTitleView.swift */,
+				FA0DCFCC2251297C00BA8CA6 /* HeaderTitleView.xib */,
+			);
+			path = HeaderTitleView;
+			sourceTree = "<group>";
+		};
+		FA0DCFD02258B9D800BA8CA6 /* UserInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F41224660F40037A23E /* UserInfoTableViewCell.swift */,
+				FA176F42224660F40037A23E /* UserInfoTableViewCell.xib */,
+			);
+			path = UserInfoCell;
+			sourceTree = "<group>";
+		};
+		FA0DCFD12258BA0F00BA8CA6 /* SegmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA0DCFD22258BBE000BA8CA6 /* SegmentTableViewCell.swift */,
+				FA0DCFD32258BBE000BA8CA6 /* SegmentTableViewCell.xib */,
+			);
+			path = SegmentCell;
+			sourceTree = "<group>";
+		};
+		FA0DCFD6225A11A400BA8CA6 /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA0DCFD7225A11BC00BA8CA6 /* TextTableViewCell.swift */,
+				FA0DCFD8225A11BC00BA8CA6 /* TextTableViewCell.xib */,
+			);
+			path = TextCell;
+			sourceTree = "<group>";
+		};
+		FA0DCFDB225A1A2200BA8CA6 /* TextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA0DCFE0225A1AF100BA8CA6 /* TextFieldTableViewCell.swift */,
+				FA0DCFE1225A1AF100BA8CA6 /* TextFieldTableViewCell.xib */,
+			);
+			path = TextFieldCell;
+			sourceTree = "<group>";
+		};
+		FA176F21222C196B0037A23E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CD82271D7B200C88FFF /* Helpers */,
+				FAAB9CD52271CAE500C88FFF /* Managers */,
+				FA176F45224682C70037A23E /* Models */,
+				FA66C2DB2209E749001C63BB /* AppDelegate.swift */,
+				FA176F392244D0CC0037A23E /* Extensions */,
+				FA176F362243F1A20037A23E /* Protocols */,
+				FA176F26222C1A750037A23E /* Routers */,
+				FA176F25222C1A4F0037A23E /* Screens */,
+				FA176F302243E6200037A23E /* CustomViews */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA176F22222C19CE0037A23E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA66C2E22209E74B001C63BB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA176F23222C1A020037A23E /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F1F222C14D40037A23E /* ViewController.swift */,
+				FA176F1D222C14950037A23E /* ViewController.xib */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		FA176F25222C1A4F0037A23E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CEC2274897700C88FFF /* Login */,
+				FAAB9CE722734EAF00C88FFF /* Main */,
+				FA176F2B2243DFD70037A23E /* Register */,
+				FA176F23222C1A020037A23E /* Start */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA176F26222C1A750037A23E /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F27222C1B590037A23E /* Router.swift */,
+				FA176F292243D75F0037A23E /* StartRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FA176F2B2243DFD70037A23E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F2C2243E0030037A23E /* RegisterViewController.swift */,
+				FA176F2D2243E0030037A23E /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FA176F302243E6200037A23E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9D022275F67A00C88FFF /* Footers */,
+				FAAB9CF92275F3DD00C88FFF /* Title */,
+				FA0DCFC3225119FF00BA8CA6 /* HeaderTitleView */,
+				FA176F3E22465F170037A23E /* Cells */,
+				FA176F312243ECA40037A23E /* PhotoView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FA176F312243ECA40037A23E /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F322243F04B0037A23E /* PhotoView.swift */,
+				FA176F342243F12A0037A23E /* PhotoView.xib */,
+			);
+			path = PhotoView;
+			sourceTree = "<group>";
+		};
+		FA176F362243F1A20037A23E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F372243F27E0037A23E /* NibLoadable.swift */,
+				FA176F4822478C5D0037A23E /* HeightContainable.swift */,
+				FA176F4A22478E2A0037A23E /* Typealiases.swift */,
+				FA0DCFCE225871E800BA8CA6 /* CellHeaderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA176F392244D0CC0037A23E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F3A2244D1120037A23E /* Extension+UIView.swift */,
+				FA176F3C2244DC180037A23E /* Extensions+NSLayoutConstraint.swift */,
+				FA0DCFC122510E7500BA8CA6 /* Extensions+UINavigationBar.swift */,
+				FA0DCFEA225A5D1F00BA8CA6 /* Extensions+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA176F3E22465F170037A23E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CF122749A8500C88FFF /* DetailFieldCell */,
+				FA0DCFDB225A1A2200BA8CA6 /* TextFieldCell */,
+				FA0DCFD6225A11A400BA8CA6 /* TextCell */,
+				FA0DCFD12258BA0F00BA8CA6 /* SegmentCell */,
+				FA0DCFD02258B9D800BA8CA6 /* UserInfoCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA176F45224682C70037A23E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F46224688B00037A23E /* RegisterCellModel.swift */,
+				FA0DCFE6225A56D800BA8CA6 /* RegisterModel.swift */,
+				FA0DCFE8225A577900BA8CA6 /* Sex.swift */,
+				FAAB9CDB2271F11800C88FFF /* CustomErrors.swift */,
+				FAAB9CDF2271F2FF00C88FFF /* FirebaseResult.swift */,
+				FAAB9D0C2275F92500C88FFF /* LoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA66C2CF2209E749001C63BB = {
+			isa = PBXGroup;
+			children = (
+				FA66C2DA2209E749001C63BB /* KetoDiet */,
+				FA66C2EF2209E74C001C63BB /* KetoDietTests */,
+				FA66C2FA2209E74C001C63BB /* KetoDietUITests */,
+				FA66C2D92209E749001C63BB /* Products */,
+				1014DBABB3334BCACB58ADD1 /* Pods */,
+				6C7196F3B3FEB976D451F2FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA66C2D92209E749001C63BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA66C2D82209E749001C63BB /* KetoDiet.app */,
+				FA66C2EC2209E74C001C63BB /* KetoDietTests.xctest */,
+				FA66C2F72209E74C001C63BB /* KetoDietUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA66C2DA2209E749001C63BB /* KetoDiet */ = {
+			isa = PBXGroup;
+			children = (
+				FA176F21222C196B0037A23E /* Classes */,
+				FA176F22222C19CE0037A23E /* Resources */,
+				FA66C2E42209E74B001C63BB /* LaunchScreen.storyboard */,
+				FA66C2E72209E74B001C63BB /* Info.plist */,
+				FA0DCFE4225A231000BA8CA6 /* GoogleService-Info.plist */,
+			);
+			path = KetoDiet;
+			sourceTree = "<group>";
+		};
+		FA66C2EF2209E74C001C63BB /* KetoDietTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA66C2F02209E74C001C63BB /* KetoDietTests.swift */,
+				FA66C2F22209E74C001C63BB /* Info.plist */,
+			);
+			path = KetoDietTests;
+			sourceTree = "<group>";
+		};
+		FA66C2FA2209E74C001C63BB /* KetoDietUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA66C2FB2209E74C001C63BB /* KetoDietUITests.swift */,
+				FA66C2FD2209E74C001C63BB /* Info.plist */,
+			);
+			path = KetoDietUITests;
+			sourceTree = "<group>";
+		};
+		FAAB9CD52271CAE500C88FFF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CD62271CB1800C88FFF /* AuthManager.swift */,
+				FAAB9CDD2271F2A400C88FFF /* FirebaseManager.swift */,
+				FAAB9CE12271F36800C88FFF /* SecureStorageManager.swift */,
+				FAAB9CE52271F63400C88FFF /* StoreManager.swift */,
+				FAAB9CF622749C4300C88FFF /* BiometricAuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FAAB9CD82271D7B200C88FFF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CD92271D7DC00C88FFF /* Utilites.swift */,
+				FAAB9CE32271F4FF00C88FFF /* Validators.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAAB9CE722734EAF00C88FFF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CE822734EED00C88FFF /* MainViewController.swift */,
+				FAAB9CE922734EED00C88FFF /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAAB9CEC2274897700C88FFF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CED22748C3500C88FFF /* LoginViewController.swift */,
+				FAAB9CEE22748C3500C88FFF /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FAAB9CF122749A8500C88FFF /* DetailFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CF222749ACB00C88FFF /* DetailFieldTableViewCell.swift */,
+				FAAB9CF322749ACB00C88FFF /* DetailFieldTableViewCell.xib */,
+			);
+			path = DetailFieldCell;
+			sourceTree = "<group>";
+		};
+		FAAB9CF92275F3DD00C88FFF /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9CFE2275F57300C88FFF /* TitleHeaderView.swift */,
+				FAAB9CFF2275F57300C88FFF /* TitleHeaderView.xib */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		FAAB9D022275F67A00C88FFF /* Footers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9D032275F68800C88FFF /* TextView */,
+			);
+			path = Footers;
+			sourceTree = "<group>";
+		};
+		FAAB9D032275F68800C88FFF /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB9D082275F79D00C88FFF /* TextFooterView.swift */,
+				FAAB9D092275F79D00C88FFF /* TextFooterView.xib */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA66C2D72209E749001C63BB /* KetoDiet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA66C3002209E74C001C63BB /* Build configuration list for PBXNativeTarget "KetoDiet" */;
+			buildPhases = (
+				AC72A4A9D47AED43B9F0FCAF /* [CP] Check Pods Manifest.lock */,
+				FA66C2D42209E749001C63BB /* Sources */,
+				FA66C2D52209E749001C63BB /* Frameworks */,
+				FA66C2D62209E749001C63BB /* Resources */,
+				10346FD9AFF11A2C06680351 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KetoDiet;
+			productName = KetoDiet;
+			productReference = FA66C2D82209E749001C63BB /* KetoDiet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA66C2EB2209E74C001C63BB /* KetoDietTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA66C3032209E74C001C63BB /* Build configuration list for PBXNativeTarget "KetoDietTests" */;
+			buildPhases = (
+				D98EA3E2AEC1AD687521EDCA /* [CP] Check Pods Manifest.lock */,
+				FA66C2E82209E74C001C63BB /* Sources */,
+				FA66C2E92209E74C001C63BB /* Frameworks */,
+				FA66C2EA2209E74C001C63BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA66C2EE2209E74C001C63BB /* PBXTargetDependency */,
+			);
+			name = KetoDietTests;
+			productName = KetoDietTests;
+			productReference = FA66C2EC2209E74C001C63BB /* KetoDietTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA66C2F62209E74C001C63BB /* KetoDietUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA66C3062209E74C001C63BB /* Build configuration list for PBXNativeTarget "KetoDietUITests" */;
+			buildPhases = (
+				3A5B55945D26DA877BA05647 /* [CP] Check Pods Manifest.lock */,
+				FA66C2F32209E74C001C63BB /* Sources */,
+				FA66C2F42209E74C001C63BB /* Frameworks */,
+				FA66C2F52209E74C001C63BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA66C2F92209E74C001C63BB /* PBXTargetDependency */,
+			);
+			name = KetoDietUITests;
+			productName = KetoDietUITests;
+			productReference = FA66C2F72209E74C001C63BB /* KetoDietUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA66C2D02209E749001C63BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = mzherikhova.ru;
+				TargetAttributes = {
+					FA66C2D72209E749001C63BB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					FA66C2EB2209E74C001C63BB = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FA66C2D72209E749001C63BB;
+					};
+					FA66C2F62209E74C001C63BB = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FA66C2D72209E749001C63BB;
+					};
+				};
+			};
+			buildConfigurationList = FA66C2D32209E749001C63BB /* Build configuration list for PBXProject "KetoDiet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA66C2CF2209E749001C63BB;
+			productRefGroup = FA66C2D92209E749001C63BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA66C2D72209E749001C63BB /* KetoDiet */,
+				FA66C2EB2209E74C001C63BB /* KetoDietTests */,
+				FA66C2F62209E74C001C63BB /* KetoDietUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA66C2D62209E749001C63BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA66C2E62209E74B001C63BB /* LaunchScreen.storyboard in Resources */,
+				FA0DCFCD2251297C00BA8CA6 /* HeaderTitleView.xib in Resources */,
+				FAAB9D0B2275F79D00C88FFF /* TextFooterView.xib in Resources */,
+				FA176F1E222C14950037A23E /* ViewController.xib in Resources */,
+				FAAB9D012275F57300C88FFF /* TitleHeaderView.xib in Resources */,
+				FA176F352243F12A0037A23E /* PhotoView.xib in Resources */,
+				FA66C2E32209E74B001C63BB /* Assets.xcassets in Resources */,
+				FA176F44224660F40037A23E /* UserInfoTableViewCell.xib in Resources */,
+				FA0DCFE5225A231000BA8CA6 /* GoogleService-Info.plist in Resources */,
+				FAAB9CEB22734EED00C88FFF /* MainViewController.xib in Resources */,
+				FA176F2F2243E0030037A23E /* RegisterViewController.xib in Resources */,
+				FAAB9CF522749ACB00C88FFF /* DetailFieldTableViewCell.xib in Resources */,
+				FAAB9CF022748C3500C88FFF /* LoginViewController.xib in Resources */,
+				FA0DCFE3225A1AF100BA8CA6 /* TextFieldTableViewCell.xib in Resources */,
+				FA0DCFD52258BBE000BA8CA6 /* SegmentTableViewCell.xib in Resources */,
+				FA0DCFDA225A11BC00BA8CA6 /* TextTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66C2EA2209E74C001C63BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66C2F52209E74C001C63BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10346FD9AFF11A2C06680351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KetoDiet/Pods-KetoDiet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARSLineProgress/ARSLineProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARSLineProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetoDiet/Pods-KetoDiet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A5B55945D26DA877BA05647 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KetoDietUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC72A4A9D47AED43B9F0FCAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KetoDiet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98EA3E2AEC1AD687521EDCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KetoDietTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA66C2D42209E749001C63BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAB9CDE2271F2A400C88FFF /* FirebaseManager.swift in Sources */,
+				FA0DCFD9225A11BC00BA8CA6 /* TextTableViewCell.swift in Sources */,
+				FAAB9CF722749C4300C88FFF /* BiometricAuthManager.swift in Sources */,
+				FAAB9CDC2271F11800C88FFF /* CustomErrors.swift in Sources */,
+				FAAB9CD72271CB1800C88FFF /* AuthManager.swift in Sources */,
+				FA176F47224688B00037A23E /* RegisterCellModel.swift in Sources */,
+				FA0DCFE9225A577900BA8CA6 /* Sex.swift in Sources */,
+				FAAB9CDA2271D7DC00C88FFF /* Utilites.swift in Sources */,
+				FAAB9CF422749ACB00C88FFF /* DetailFieldTableViewCell.swift in Sources */,
+				FA0DCFD42258BBE000BA8CA6 /* SegmentTableViewCell.swift in Sources */,
+				FA176F43224660F40037A23E /* UserInfoTableViewCell.swift in Sources */,
+				FA176F20222C14D40037A23E /* ViewController.swift in Sources */,
+				FA0DCFEB225A5D1F00BA8CA6 /* Extensions+UIViewController.swift in Sources */,
+				FA176F2E2243E0030037A23E /* RegisterViewController.swift in Sources */,
+				FAAB9CEF22748C3500C88FFF /* LoginViewController.swift in Sources */,
+				FAAB9CE42271F4FF00C88FFF /* Validators.swift in Sources */,
+				FA0DCFC222510E7500BA8CA6 /* Extensions+UINavigationBar.swift in Sources */,
+				FAAB9CE02271F2FF00C88FFF /* FirebaseResult.swift in Sources */,
+				FA176F3B2244D1120037A23E /* Extension+UIView.swift in Sources */,
+				FA176F3D2244DC180037A23E /* Extensions+NSLayoutConstraint.swift in Sources */,
+				FAAB9CEA22734EED00C88FFF /* MainViewController.swift in Sources */,
+				FA176F382243F27E0037A23E /* NibLoadable.swift in Sources */,
+				FAAB9D0A2275F79D00C88FFF /* TextFooterView.swift in Sources */,
+				FA176F4922478C5D0037A23E /* HeightContainable.swift in Sources */,
+				FAAB9CE22271F36800C88FFF /* SecureStorageManager.swift in Sources */,
+				FA176F4B22478E2A0037A23E /* Typealiases.swift in Sources */,
+				FA176F28222C1B590037A23E /* Router.swift in Sources */,
+				FA0DCFC522511A4500BA8CA6 /* HeaderTitleView.swift in Sources */,
+				FA176F332243F04B0037A23E /* PhotoView.swift in Sources */,
+				FA66C2DC2209E749001C63BB /* AppDelegate.swift in Sources */,
+				FA0DCFE7225A56D800BA8CA6 /* RegisterModel.swift in Sources */,
+				FAAB9D002275F57300C88FFF /* TitleHeaderView.swift in Sources */,
+				FAAB9D0D2275F92500C88FFF /* LoginModel.swift in Sources */,
+				FA0DCFCF225871E800BA8CA6 /* CellHeaderProtocol.swift in Sources */,
+				FAAB9CE62271F63400C88FFF /* StoreManager.swift in Sources */,
+				FA176F2A2243D75F0037A23E /* StartRouter.swift in Sources */,
+				FA0DCFE2225A1AF100BA8CA6 /* TextFieldTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66C2E82209E74C001C63BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA66C2F12209E74C001C63BB /* KetoDietTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA66C2F32209E74C001C63BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA66C2FC2209E74C001C63BB /* KetoDietUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA66C2EE2209E74C001C63BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA66C2D72209E749001C63BB /* KetoDiet */;
+			targetProxy = FA66C2ED2209E74C001C63BB /* PBXContainerItemProxy */;
+		};
+		FA66C2F92209E74C001C63BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA66C2D72209E749001C63BB /* KetoDiet */;
+			targetProxy = FA66C2F82209E74C001C63BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA66C2E42209E74B001C63BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA66C2E52209E74B001C63BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA66C2FE2209E74C001C63BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA66C2FF2209E74C001C63BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA66C3012209E74C001C63BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D7B493276C862EF1E39913 /* Pods-KetoDiet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = KetoDiet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.KetoDiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA66C3022209E74C001C63BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3754CB636F23DA26D683D967 /* Pods-KetoDiet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = KetoDiet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.KetoDiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA66C3042209E74C001C63BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB4CE70A2760C1A3A3E5172 /* Pods-KetoDietTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = KetoDietTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.KetoDietTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KetoDiet.app/KetoDiet";
+			};
+			name = Debug;
+		};
+		FA66C3052209E74C001C63BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5B6AB5AD2FC7224196363D /* Pods-KetoDietTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = KetoDietTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.KetoDietTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KetoDiet.app/KetoDiet";
+			};
+			name = Release;
+		};
+		FA66C3072209E74C001C63BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32F8ADF4921CA65337507E4 /* Pods-KetoDietUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = KetoDietUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.KetoDietUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KetoDiet;
+			};
+			name = Debug;
+		};
+		FA66C3082209E74C001C63BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A0873C74188A800ECB043C /* Pods-KetoDietUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU3Z5233FJ;
+				INFOPLIST_FILE = KetoDietUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mzherikhova.KetoDietUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KetoDiet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA66C2D32209E749001C63BB /* Build configuration list for PBXProject "KetoDiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA66C2FE2209E74C001C63BB /* Debug */,
+				FA66C2FF2209E74C001C63BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA66C3002209E74C001C63BB /* Build configuration list for PBXNativeTarget "KetoDiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA66C3012209E74C001C63BB /* Debug */,
+				FA66C3022209E74C001C63BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA66C3032209E74C001C63BB /* Build configuration list for PBXNativeTarget "KetoDietTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA66C3042209E74C001C63BB /* Debug */,
+				FA66C3052209E74C001C63BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA66C3062209E74C001C63BB /* Build configuration list for PBXNativeTarget "KetoDietUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA66C3072209E74C001C63BB /* Debug */,
+				FA66C3082209E74C001C63BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA66C2D02209E749001C63BB /* Project object */;
+}

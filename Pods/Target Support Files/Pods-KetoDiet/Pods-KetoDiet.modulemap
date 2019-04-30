@@ -1,0 +1,6 @@
+framework module Pods_KetoDiet {
+  umbrella header "Pods-KetoDiet-umbrella.h"
+
+  export *
+  module * { export * }
+}

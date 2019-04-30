@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UserInfoTableViewCell" customModule="KetoDiet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-Y0-fZM" customClass="PhotoView" customModule="KetoDiet" customModuleProvider="target">
+                        <rect key="frame" x="16" y="15" width="69.5" height="69.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lws-Y0-fZM" secondAttribute="height" multiplier="1:1" id="dTX-je-hzX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csD-BV-GJT">
+                        <rect key="frame" x="101.5" y="0.0" width="218.5" height="99.5"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7E-Rp-74M">
+                                <rect key="frame" x="0.0" y="0.0" width="218.5" height="49.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12T-5z-WfY">
+                                <rect key="frame" x="0.0" y="50" width="218.5" height="49.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywr-TE-UJa">
+                                <rect key="frame" x="0.0" y="49.5" width="218.5" height="0.5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="2Ge-uW-qnw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G7E-Rp-74M" firstAttribute="leading" secondItem="csD-BV-GJT" secondAttribute="leading" id="3Dv-ZQ-b11"/>
+                            <constraint firstItem="12T-5z-WfY" firstAttribute="leading" secondItem="Ywr-TE-UJa" secondAttribute="leading" id="9Ov-7o-SHe"/>
+                            <constraint firstAttribute="trailing" secondItem="Ywr-TE-UJa" secondAttribute="trailing" id="CW9-hG-3uE"/>
+                            <constraint firstItem="G7E-Rp-74M" firstAttribute="top" secondItem="csD-BV-GJT" secondAttribute="top" id="GmZ-9U-F6H"/>
+                            <constraint firstItem="12T-5z-WfY" firstAttribute="top" secondItem="Ywr-TE-UJa" secondAttribute="bottom" id="Jgd-CB-QtA"/>
+                            <constraint firstItem="Ywr-TE-UJa" firstAttribute="top" secondItem="G7E-Rp-74M" secondAttribute="bottom" id="PJ2-FR-crO"/>
+                            <constraint firstItem="G7E-Rp-74M" firstAttribute="leading" secondItem="Ywr-TE-UJa" secondAttribute="leading" id="PV0-oJ-nRB"/>
+                            <constraint firstAttribute="trailing" secondItem="G7E-Rp-74M" secondAttribute="trailing" id="QnV-cT-DO7"/>
+                            <constraint firstItem="12T-5z-WfY" firstAttribute="leading" secondItem="csD-BV-GJT" secondAttribute="leading" id="WpS-RX-t07"/>
+                            <constraint firstAttribute="bottom" secondItem="12T-5z-WfY" secondAttribute="bottom" id="b6o-2g-BMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="12T-5z-WfY" secondAttribute="trailing" id="tNx-v5-NUG"/>
+                            <constraint firstItem="G7E-Rp-74M" firstAttribute="height" secondItem="12T-5z-WfY" secondAttribute="height" id="uDY-MA-stN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="csD-BV-GJT" secondAttribute="trailing" id="4uV-iw-EOq"/>
+                    <constraint firstAttribute="bottom" secondItem="csD-BV-GJT" secondAttribute="bottom" id="HmQ-FQ-svo"/>
+                    <constraint firstItem="Lws-Y0-fZM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IqA-84-qB7"/>
+                    <constraint firstItem="csD-BV-GJT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uzf-oM-Zqv"/>
+                    <constraint firstItem="csD-BV-GJT" firstAttribute="leading" secondItem="Lws-Y0-fZM" secondAttribute="trailing" constant="16" id="Vor-SW-HQv"/>
+                    <constraint firstItem="Lws-Y0-fZM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zzk-aM-ao7"/>
+                    <constraint firstItem="Ywr-TE-UJa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kYf-7b-5ix"/>
+                    <constraint firstItem="Lws-Y0-fZM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.7" id="vbl-Wr-Ygo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundFieldsView" destination="csD-BV-GJT" id="aVX-m5-58T"/>
+                <outlet property="bottomTextField" destination="12T-5z-WfY" id="kVt-RU-fhp"/>
+                <outlet property="photoView" destination="Lws-Y0-fZM" id="016-Bz-9NY"/>
+                <outlet property="topTextField" destination="G7E-Rp-74M" id="SYi-NH-4gc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
